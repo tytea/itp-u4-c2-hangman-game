@@ -41,14 +41,25 @@ def _uncover_word(answer_word, masked_word, character):
     
 
     
-    if len(character) > 1:
-        raise InvalidGuessedLetterException("Character to guess has len() > 1")
-    if len(answer_word) != len(masked_word):
-        raise InvalidWordException("Length of words is different")
-    if not answer_word or not masked_word:
-        raise InvalidWordException("""Words are empty""")
-    if answer_word == '' or masked_word == '':
-        raise InvalidWordException('Words are empty')
+#     if len(character) > 1:
+#         raise InvalidGuessedLetterException("Character to guess has len() > 1")
+#     if len(answer_word) != len(masked_word):
+#         raise InvalidWordException("Length of words is different")
+#     if not answer_word or not masked_word:
+#         raise InvalidWordException("Words are empty")
+#     if answer_word == '' or masked_word == '':
+#         raise InvalidWordException('Words are empty')
+        
+        
+    try:
+        len(character) = 1:
+    except InvalidGuessedLetterException("Character to guess has len() > 1")
+    try:
+        len(answer_word) == len(masked_word):
+    except InvalidWordException("Length of words is different")
+    try:
+        answer_word != '' and masked_word != '':
+    except InvalidWordException('Words are empty')
 
 
         

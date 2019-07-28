@@ -1,7 +1,7 @@
 import pytest
-from game import (
+from hangman.game import (
     start_new_game, guess_letter, _get_random_word, _mask_word, _uncover_word)
-from exceptions import *
+from hangman.exceptions import *
 
 
 def test_uncover_word_with_empty_word():
