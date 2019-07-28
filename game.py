@@ -73,9 +73,35 @@ def _uncover_word(answer_word, masked_word, character):
             
     return guesses
         
-# word = _uncover_word('Python', '*y****', 'z')
-# print(word)
+word = _uncover_word('Python', '*y****', 'z')
+print(word)
+# yest = _uncover_word('', '', 'x')
+    
 
+
+
+# test_word = 'Kitten'
+# test_mask = '******'
+
+# # print(len(test_word))
+# # print(len(test_mask))
+
+# game = _uncover_word(test_word, test_mask, 'e')
+# print(game)
+
+# # print(len(game))
+# game2 = _uncover_word(test_word, game, 'N')
+# print(game2)
+# game3 = _uncover_word(test_word, game2, 'k')
+# print(game3)
+# game4 = _uncover_word(test_word, game3, 'z')
+
+#     game = {
+#         'answer_word': word_to_guess,
+#         'masked_word': masked_word,
+#         'previous_guesses': [],
+#         'remaining_misses': number_of_guesses,
+#     }
             
 
 def guess_letter(game, letter):
